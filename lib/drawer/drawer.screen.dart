@@ -1,6 +1,7 @@
 import 'package:drawer_example/screens/favourites_screen.dart';
 import 'package:drawer_example/screens/home_screen.dart';
 import 'package:drawer_example/screens/profile_screen.dart';
+import 'package:drawer_example/screens/workflow_screen.dart';
 import 'package:flutter/material.dart';
 
 class DrawerScreen extends StatelessWidget {
@@ -75,12 +76,18 @@ class DrawerScreen extends StatelessWidget {
                 ListTile(
                   leading: Icon(Icons.workspaces),
                   title: Text('Workflow'),
-                  onTap: (){},
+                  onTap: (){
+                     Navigator.pop(context);
+                     Navigator.push(context, MaterialPageRoute(builder: (context) => FavouriteScreen()));
+                  },
                 ),
                 ListTile(
                   leading: Icon(Icons.update),
                   title: Text('Updates'),
-                  onTap: (){},
+                  onTap: (){
+                     Navigator.pop(context);
+                     Navigator.push(context, MaterialPageRoute(builder: (context) => WorkFlowScreen()));
+                  },
                 ),
                 const Divider(color: Colors.black45,),
                 ListTile(
