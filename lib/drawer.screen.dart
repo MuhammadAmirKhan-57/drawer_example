@@ -1,3 +1,4 @@
+import 'package:drawer_example/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 class DrawerScreen extends StatelessWidget {
@@ -19,6 +20,7 @@ class DrawerScreen extends StatelessWidget {
                     onTap: () {
                       /// Close Navigation drawer before
                       Navigator.pop(context);
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen()));
                     },
                     child: Container(
                       padding: EdgeInsets.only(
