@@ -1,5 +1,6 @@
 import 'package:drawer_example/screens/favourites_screen.dart';
 import 'package:drawer_example/screens/home_screen.dart';
+import 'package:drawer_example/screens/plugins_screen.dart';
 import 'package:drawer_example/screens/profile_screen.dart';
 import 'package:drawer_example/screens/update_screen.dart';
 import 'package:drawer_example/screens/workflow_screen.dart';
@@ -94,7 +95,10 @@ class DrawerScreen extends StatelessWidget {
                 ListTile(
                   leading: Icon(Icons.account_tree_outlined),
                   title: Text('Plugins'),
-                  onTap: (){},
+                  onTap: (){
+                     Navigator.pop(context);
+                     Navigator.push(context, MaterialPageRoute(builder: (context) => PluginScreen()));
+                  },
                 ),
                 ListTile(
                   leading: Icon(Icons.notifications_outlined),
