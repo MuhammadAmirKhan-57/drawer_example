@@ -1,4 +1,5 @@
-import 'package:drawer_example/profile_screen.dart';
+import 'package:drawer_example/screens/home_screen.dart';
+import 'package:drawer_example/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 class DrawerScreen extends StatelessWidget {
@@ -58,6 +59,7 @@ class DrawerScreen extends StatelessWidget {
                   onTap: (){
                     /// Close Navigation drawer before
                     Navigator.pop(context);
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
                   },
                 ),
                 ListTile(
