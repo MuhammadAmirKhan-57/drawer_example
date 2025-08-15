@@ -1,3 +1,4 @@
+import 'package:drawer_example/drawer.screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
+      home: DrawerScreen(),
     );
   }
 }
